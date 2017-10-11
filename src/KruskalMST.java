@@ -5,8 +5,6 @@ import java.util.Arrays;
  */
 
 
-
-
 public class KruskalMST {
 
     // Driver Program
