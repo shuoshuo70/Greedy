@@ -4,7 +4,6 @@ import java.util.Arrays;
  * Created by shuoshuo on 2017/10/10.
  */
 
-
 public class KruskalMST {
 
     // Driver Program

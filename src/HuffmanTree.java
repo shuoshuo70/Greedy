@@ -2,6 +2,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * O(nlogn) 使用频率越高的编码越短， 原理是把要编码的字符看做n棵独立的树，取权重最小的两棵合成新树，新树的权重为这两棵树
+ * 权重的和，重复这个过程直至成为一颗树。  编码是从根节点开始，左子树为0，右子树为1，要编码的字符是n个叶子节点
  * Created by shuoshuo on 2017/10/11.
  */
 //哈夫曼树类
@@ -79,7 +81,6 @@ public class HuffmanTree {
         tree.huffman(weight);
         tree.huffmanCode(4);
         for (int i=0; i<4; i++) {
-
             System.out.println(tree.codes[i].codes);
         }
     }
